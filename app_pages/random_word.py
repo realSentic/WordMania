@@ -45,7 +45,7 @@ st.write("---")
 
 selection = st.selectbox("Explain like:", ["Pirate", "Shakespeare", "Naruto", "Wizard", "Goku", "Sherlock Holmes", "Vampire", "Napoleon Bonaparte", "Socrates", "Luffy", "Tsundere Girl", "Over-the-top battle announcer"])
 
-client = genai.Client(api_key="AIzaSyAM9Vwf_KIO1BAJzX1Kh14bCJtlhvAa9wE")
+client = genai.Client(api_key=st.secrets["genai"]["api_key"])
 if word:
     with st.spinner("Please wait..."):
         ai_response = client.models.generate_content(
@@ -65,5 +65,6 @@ if word:
             if item['example_text']:
                 st.write(f"***Example***: {item['example_text'].capitalize()}")
             st.write("---")
+
 
 
