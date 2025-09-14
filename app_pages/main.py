@@ -36,7 +36,7 @@ st.write("### Enter a word above to get started!")
 word = st.text_input("Search for a word")
 
 st.write("---")
-selection = st.selectbox("Explain like:", ["Pirate", "Shakespeare", "Naruto", "Wizard", "Goku", "Sherlock Holmes", "Vampire", "Napoleon Bonaparte", "Socrates", "Luffy", "Tsundere Girl", "Over-the-top battle announcer", "Charlie Kirk", "Superman"])
+selection = st.selectbox("Explain like:", ["Pirate", "Shakespeare", "Naruto", "Wizard", "Goku", "Sherlock Holmes", "Vampire", "Napoleon Bonaparte", "Socrates", "Luffy", "Tsundere Girl", "Over-the-top battle announcer", "Charlie Kirk", "Superman", "Batman", "Yandere", "Dio Brando"])
 
 if not word.strip():
     st.error("Please enter a word.")
@@ -63,5 +63,6 @@ if word:
         
 
           
+
 
 
