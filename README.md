@@ -10,4 +10,8 @@ WordMania is an interactive application that provides users with dictionary defi
 - Search for any English word.
 - Display part of speech, definition, and example sentences.
 - Obtain a three-sentence explanation of the word in a selected character or style.
+
 - Interactive user interface built with Streamlit, including spinners and organized layout.
+
+**Try the website now!**
+https://wordmania.streamlit.app/
