@@ -49,6 +49,7 @@ else:
     st.write(ai_response.text)
     st.write("---")
 
+# Result
 if word:
     results = get_dictionary_word(word)
     if results:
@@ -62,3 +63,4 @@ if word:
         
 
           
+
