@@ -28,7 +28,7 @@ def get_dictionary_word(word):
 
 
 # AI
-client = genai.Client(api_key="AIzaSyAM9Vwf_KIO1BAJzX1Kh14bCJtlhvAa9wE")
+client = genai.Client(api_key=st.secrets["genai"]["api_key"])
 
 # Streamlit UI
 st.title("WordMania!")
@@ -60,4 +60,5 @@ if word:
             st.write("---")
 
         
+
           
